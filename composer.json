@@ -1,0 +1,43 @@
+{
+    "name": "kcdev/laravel-setting",
+    "description": "A simple settings manager for laravel",
+    "keywords": [
+        "kcdev",
+        "laravel-alert"
+    ],
+    "homepage": "https://github.com/amirmarmul/laravel-setting",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "amirmarmul",
+            "email": "amiruddinmarmul@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.2",
+        "illuminate/support": "^6.0|^7.0",
+        "illuminate/database": "^6.0|^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kcdev\\Setting\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kcdev\\Setting\\SettingServiceProvider"
+            ],
+            "aliases": {
+                "Setting": "Kcdev\\Setting\\Facades\\Setting"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
